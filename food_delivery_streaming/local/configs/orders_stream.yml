@@ -1,0 +1,21 @@
+postgres:
+  jdbc_url: "jdbc:postgresql://127.0.0.1:5432/food_delivery_db"
+  host: "127.0.0.1"
+  port: 5432
+  db: "food_delivery_db"
+  user: "student"
+  password: "student123"
+  table: "orders_1100378"
+
+kafka:
+  brokers: "localhost:9092"
+  topic: "food_orders_raw_1100378"
+
+datalake:
+  path: "output/orders"
+  format: "parquet"
+
+streaming:
+  checkpoint_location: "output/checkpoints/orders"
+  last_processed_timestamp_location: "output/lastprocess/orders_state.json"
+  batch_interval: 5
