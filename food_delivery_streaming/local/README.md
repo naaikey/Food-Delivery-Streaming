@@ -112,3 +112,4 @@ SELECT * FROM orders_1100378;
 - **configs/**: Configuration files for the pipeline, including `orders_stream.yml`.
 - **scripts/**: Bash scripts (`producer_spark_submit.sh`, `consumer_spark_submit.sh`) to start producer and consumer.
 - **output/orders/**: Parquet data lake where consumer writes partitioned files by date.
+
